@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVision - Nền Tảng Chuyển Đổi Số Hiện Đại</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --cta-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #333333;
+        }
+
+        /* Navbar */
+        .navbar-custom {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        /* Hero / Banner Section */
+        .hero-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        /* Feature Card */
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1) !important;
+        }
+
+        .feature-icon-wrapper {
+            width: 65px;
+            height: 65px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #e7f1ff;
+            color: #0d6efd;
+            font-size: 1.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--cta-gradient);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top navbar-custom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary d-flex align-items-center gap-2" href="#">
+                <i class="bi bi-rocket-takeoff-fill fs-3"></i>
+                <span class="fs-4">TechVision</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active fw-medium" href="#hero">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#about">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#features">Tính năng</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#cta">Liên hệ</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a href="#cta" class="btn btn-outline-primary px-4 rounded-pill">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Banner / Hero Section (Bootstrap 5 Responsive Banner) -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill mb-3 fw-semibold">
+                        <i class="bi bi-stars me-1"></i> Nền tảng công nghệ thế hệ mới
+                    </span>
+                    <h1 class="display-4 fw-bold text-dark lh-sm mb-3">
+                        Giải Pháp Quản Lý <span class="text-primary">Thông Minh & Tối Ưu</span>
+                    </h1>
+                    <p class="lead text-muted mb-4">
+                        Nâng cao hiệu suất kinh doanh, tự động hóa quy trình làm việc và mở rộng quy mô doanh nghiệp dễ dàng với nền tảng điện toán đám mây hiện đại.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#cta" class="btn btn-primary btn-lg px-4 py-3 shadow-sm rounded-pill fw-semibold">
+                            Bắt đầu ngay hôm nay <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                        <a href="#about" class="btn btn-outline-secondary btn-lg px-4 py-3 rounded-pill fw-semibold">
+                            Tìm hiểu thêm
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80" 
+                         alt="Tech Platform Banner" 
+                         class="img-fluid rounded-4 shadow-lg border">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Giới thiệu (About Section) -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                         alt="Đội ngũ phát triển" 
+                         class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-2 text-center text-lg-start">
+                    <h6 class="text-primary text-uppercase fw-bold tracking-wider mb-2">Về chúng tôi</h6>
+                    <h2 class="fw-bold display-6 mb-3">Đồng hành cùng sự chuyển đổi số của bạn</h2>
+                    <p class="text-muted mb-3 fs-5">
+                        Chúng tôi cung cấp các công cụ trực quan và mạnh mẽ giúp doanh nghiệp ở mọi quy mô kết nối, vận hành và phát triển bền vững trong kỷ nguyên số.
+                    </p>
+                    <ul class="list-unstyled text-muted d-flex flex-column gap-2 text-start mx-auto ms-lg-0" style="max-width: 480px;">
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                            <span>Tối ưu hóa hơn 40% chi phí vận hành thường niên.</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                            <span>Tích hợp liền mạch với hơn 100+ công cụ phổ biến.</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                            <span>Hỗ trợ kỹ thuật chuyên nghiệp 24/7.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Danh sách tính năng (Features Section) -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <h6 class="text-primary text-uppercase fw-bold mb-2">Tính năng vượt trội</h6>
+                <h2 class="fw-bold display-6 mb-2">Những giá trị chúng tôi mang lại</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">
+                    Mọi tính năng đều được thiết kế tỉ mỉ nhằm đem lại trải nghiệm mượt mà, tiện lợi và an toàn tuyệt đối.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Tính năng 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center rounded-4 feature-card bg-white shadow-sm">
+                        <div class="mx-auto feature-icon-wrapper">
+                            <i class="bi bi-speedometer2"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Tốc Độ Vượt Trội</h5>
+                        <p class="text-muted small mb-0">Xử lý khối lượng dữ liệu khổng lồ trong tích tắc với hạ tầng server hiệu năng cao.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center rounded-4 feature-card bg-white shadow-sm">
+                        <div class="mx-auto feature-icon-wrapper">
+                            <i class="bi bi-shield-lock-fill"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Bảo Mật Tối Đa</h5>
+                        <p class="text-muted small mb-0">Hệ thống mã hóa chuẩn ngân hàng SSL/TLS bảo vệ dữ liệu khách hàng tuyệt đối an toàn.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center rounded-4 feature-card bg-white shadow-sm">
+                        <div class="mx-auto feature-icon-wrapper">
+                            <i class="bi bi-phone-fill"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Đa Nền Tảng</h5>
+                        <p class="text-muted small mb-0">Tương thích hoàn hảo trên mọi kích thước màn hình từ Desktop, Tablet cho tới Điện thoại.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center rounded-4 feature-card bg-white shadow-sm">
+                        <div class="mx-auto feature-icon-wrapper">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Hỗ Trợ 24/7</h5>
+                        <p class="text-muted small mb-0">Đội ngũ kỹ thuật viên giàu kinh nghiệm luôn sẵn sàng giải đáp và hỗ trợ mọi lúc mọi nơi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Nút Kêu Gọi Hành Động (CTA Section) -->
+    <section id="cta" class="cta-section py-5 text-center">
+        <div class="container py-lg-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <h2 class="display-6 fw-bold mb-3">Sẵn sàng nâng tầm doanh nghiệp của bạn?</h2>
+                    <p class="lead mb-4 text-white-50">
+                        Đăng ký dùng thử miễn phí 14 ngày. Không yêu cầu thẻ tín dụng. Hủy bất cứ lúc nào.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                        <a href="#" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow">
+                            <i class="bi bi-pencil-square me-2"></i> Đăng ký ngay
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill fw-semibold">
+                            Liên hệ tư vấn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white-50 py-4 text-center">
+        <div class="container">
+            <p class="mb-1 text-white">&copy; 2026 TechVision. All rights reserved.</p>
+            <p class="small mb-0">Thiết kế bởi Bootstrap 5 Responsive Landing Page</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
